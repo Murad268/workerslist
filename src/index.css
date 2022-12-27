@@ -1,13 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+   padding: 30px 0 0 0;
+}
+.header {
+   height: 70px;
+   background-color: #5788EE;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   padding: 10px 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.workersCount, .likedsCount {
+	font-size: 20px;
+	color:brown;
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+
+.workersCount span, .likedsCount span{
+	color: black;
+}
+.body {
+	margin-top: 20px;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.BodyElTop {
+	margin: 0 auto;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+
+
+}
+
+.BodyElControlls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80px;
+	margin: 0 auto;
+}
+.BodyElControlls div {
+	cursor: pointer;
+}
+
+.BodyEl {
+	margin-top: 10px;
+	padding: 30px;
+	background-color:aqua;
+	color: white;
+	font-weight: 900;
+	font-size: 20px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.liked {
+	color: blue;
+}
+
+.addWorker {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	margin-top: 20px;
+}
+
+
+.addWorker {
+	padding: 20px 10px 10px 10px;
+}
+
+.addWorker input {
+	width: 60%;
+	
+	margin: 0 auto 20px auto;
+}
+
+.addWorker button {
+	display: block;
+	margin: 0 auto;
+}
+
+.search input {
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	width: 60%;
+	margin-top: 20px;
+	outline: none;
+	padding-left: 10px;
+}
+
+
+.BodyElBottom {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin-top: 15px;
+	padding: 20px;
+	display: none;
+}
+
+.BodyElBottom input {
+	width: 250px;
+	height: 40px;
+}
+.BodyElBottom button {
+	width: 150px;
+}
+.BodyElBottom .BodyElTop {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nonOr {
+	display: block;
 }
